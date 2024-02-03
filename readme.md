@@ -23,6 +23,8 @@ guest/guest
 ## notes
 - There are several types of exchanges. The fanout exchange ignores the routing key and sends messages to all queues. But pretty much all other exchange types use the routing key to determine which queue, if any, will receive a message.
 
+- Use Topic & Direct Exchanges (routing key) to bind topic/key to queues. One queue can take mulitple topics/key.
+
 # Python
 - python3 fanout_publisher_subscriber.py receive test1
 - python3 fanout_publisher_subscriber.py receive test2
